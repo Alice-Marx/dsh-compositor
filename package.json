@@ -1,6 +1,6 @@
 {
   "name": "@ljwei-stak/dsh-compositor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Compositor (.comp) project tools for DeepSeek Harness agents: live format docs read from the synced github.com/robbietilton/Compositor checkout, forward-compatible manifest validation, atomic manifest writes, layer PNG/mask generation and a best-effort flattened preview.",
   "keywords": [

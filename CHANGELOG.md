@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 (2026-10-13)
+
+- READMEs (English + Chinese) no longer contain machine-specific paths; added a language switcher linking the two, a usage section (the plugin is agent-tools-only, no panel) and generic install instructions including `dsh plugin` and source packs.
+
 ## 0.1.0 (2026-10-13)
 
 Initial release.
