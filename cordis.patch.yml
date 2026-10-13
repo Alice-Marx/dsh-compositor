@@ -1,0 +1,5 @@
+# DeepSeek Harness bundle entry. `id` is the Cordis plugin name and the
+# settings namespace; `name` is the module the loader imports (this package).
+- insert:
+    - id: dsh-compositor
+      name: '@ljwei-stak/dsh-compositor'

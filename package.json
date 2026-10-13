@@ -1,0 +1,67 @@
+{
+  "name": "@ljwei-stak/dsh-compositor",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Compositor (.comp) project tools for DeepSeek Harness agents: live format docs read from the synced github.com/robbietilton/Compositor checkout, forward-compatible manifest validation, atomic manifest writes, layer PNG/mask generation and a best-effort flattened preview.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "compositor",
+    "comp-file",
+    "image-editor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alice-Marx/dsh-compositor.git"
+  },
+  "homepage": "https://github.com/Alice-Marx/dsh-compositor#readme",
+  "bugs": {
+    "url": "https://github.com/Alice-Marx/dsh-compositor/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./.dsh-plugin/index.mjs",
+  "exports": {
+    ".": "./.dsh-plugin/index.mjs",
+    "./client": "./.dsh-plugin/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    ".dsh-plugin/index.mjs",
+    ".dsh-plugin/client.js",
+    ".dsh-plugin/shared/comp-paths.mjs",
+    ".dsh-plugin/shared/comp-docs.mjs",
+    ".dsh-plugin/shared/comp-png.mjs",
+    ".dsh-plugin/shared/comp-validate.mjs",
+    ".dsh-plugin/shared/comp-project.mjs",
+    ".dsh-plugin/shared/comp-preview.mjs",
+    ".dsh-plugin/shared/comp-blend.mjs",
+    ".dsh-plugin/shared/comp-tools.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test tests/"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.4",
+    "@deepseek-ai/schemastery": "~3.18.4"
+  },
+  "optionalDependencies": {
+    "sharp": "^0.34.4"
+  }
+}
